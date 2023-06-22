@@ -1,0 +1,1 @@
+##Landing Page para capturar nome e email e guardar no localstorage

@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(153,16,23,1) 90%);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    max-width: 1280px;
+    width: 100%;
+    margin: 6px auto;
+    /* background-color: aqua; */
+}
+.header{
+    width: 100%;
+	position: fixed;
+	top: 0;
+	transition: all .4s;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(153,16,23,1) 90%);
+    font-size: medium;
+    color: #fff;
+}
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 140px;
+    height: 40px;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 1.6em;
+    padding: 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu ul li a:active{
+    color:  #f39d1d;
+}
+
+@media (max-width: 700px){
+    .content-header{
+        display: none;
+    }
+}
+
+@media (min-width: 701px){
+    .content-mobile #mobile{
+        display: none;
+    }
+}
+
+/*Menu mobile*/
+.content-header-mobile{
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.menu-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-mobile{
+    display: flex;
+    justify-content: flex-end;
+}
+.content-mobile #mobile{
+    margin: 15px 20px 0 0;
+}
+.menu-mobile .logo{
+    margin-top: 30px;
+}
+.menu-mobile ul{
+    padding: 30px 0 30px 0;
+}
+.menu-mobile ul li{
+    list-style: none;
+    font-size: 1.6em;
+    text-align: center;
+    margin: 8px 0 8px 0;
+}
+.menu-mobile ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+/*********************/
+
+.container-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 1199px){
+    .container-banner{
+        justify-content: center;
+    }
+}
+.content-banner{
+    background-color: #060606;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.content-banner .banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.content-banner .banner p{
+    color: #f39d1d;
+    border: 3px solid #e11237;
+    display: inline-block;
+    padding: 5px 40px;
+    font-size: 1.8em;
+    margin-bottom: 2%;
+}
+.content-banner .banner h4{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3.6em;
+}
+.content-banner .banner h5{
+    color: #fff;
+    text-transform: uppercase;
+}
+.content-banner .banner h1{
+    color: #e11237;
+    text-transform: uppercase;
+    font-size: 8.6em;
+}
+.content-banner .banner a{
+    background-color: #bb7918;
+    color: #0e0e0e;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.banner-desconto{
+    display: flex;
+    align-items: center;
+}
+.banner-desconto h5{
+    font-size: 1.6em;
+    margin-right: 38px;
+}
+
+.img-banner{
+    max-width: 600px;
+    width: 100%;
+}
+.img-banner img{
+    max-width: 100%;
+}
+
+.content-ofertas{
+    width: 100%;
+    height: auto;
+    background-image: url('/assets/img/black-wallpaper-best.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+}
+.container-ofertas{
+    display: flex;
+    justify-content: center;
+}
+.content-ofertas h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.3em;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: -30px;
+}
+.logo-ofertas img{
+    padding-top: 60px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container-cards .card{
+    width: 400px;
+    height: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 1319px){
+    .container-cards .card:last-child{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 1319px){
+    .container-cards .card:nth-child(1){
+        margin-bottom: 30px;
+    }
+}
+.container-cards .card:hover{
+    -webkit-box-shadow: 1px 2px 22px 9px #fff; 
+    box-shadow: 1px 2px 22px 9px #fff;
+    transition: all .3s;
+    cursor: pointer;
+}
+.container-cards .card .card-img img{
+    width: 160px;
+    height: 160px;
+    margin-left: 20px;
+}
+.container-cards .card .card-description{
+    text-align: center;
+    margin-right: 20px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+.container-cards .card .card-description p{
+    margin: 5px 0;
+}
+
+.container-cards .card .card-description .card-button{
+    background-color: #f39d1d;
+    padding: 8px;
+    margin: 0 auto;
+}
+.container-cards .card .card-description .card-button-compra{
+    background-color: #000;
+    padding: 8px;
+    display: block;
+    color: #f39d1d;
+    text-decoration: none;
+}
+
+.content-inscrever{
+    padding-bottom: 60px;
+}
+.content-inscrever h1{
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 2.3em;
+}
+.container-from{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 40px;
+    border-radius: 4px;
+}
+#form input{
+    display: block;
+}
+input[type="text"]{
+    width: 400px;
+    height: 35px;
+    margin: 10px 0 10px 0;
+}
+input[type="email"]{
+    width: 400px;
+    height: 35px;
+    margin: 10px 0 10px 0;
+}
+.container-from button{
+    padding: 10px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.content-inscrever label{
+    color: #000;
+}
+
+footer{
+    background-color: #060606;
+    padding: 40px 0;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+}
